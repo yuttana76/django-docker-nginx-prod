@@ -6,7 +6,7 @@ COPY ./run.sh /run.sh
 COPY ./cert/* /etc/cert/
 
 ENV APP_HOST=app
-ENV APP_PORT=9000
+ENV APP_PORT=8000
 
 USER root
 
