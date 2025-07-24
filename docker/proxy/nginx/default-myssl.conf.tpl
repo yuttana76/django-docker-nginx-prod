@@ -18,6 +18,7 @@ server {
     ssl_certificate     /etc/cert/certificate.pem;
     ssl_certificate_key /etc/cert/private.pem;
 
+
     include     /etc/nginx/options-ssl-nginx.conf;
 
     add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
