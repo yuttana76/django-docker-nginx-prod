@@ -17,7 +17,7 @@ server {
 
     ssl_certificate     /etc/cert/certificate.pem;
     ssl_certificate_key /etc/cert/private.pem;
-
+    #ssl_password_file /etc/cert/ssl.pass;
 
     include     /etc/nginx/options-ssl-nginx.conf;
 

@@ -5,10 +5,11 @@ services:
     build:
       context: .
     restart: always
-    environment:
-      - DJANGO_SECRET_KEY=${DJANGO_SECRET_KEY}
-      # - DJANGO_ALLOWED_HOSTS=127.0.0.1,192.168.10.57
-      - DJANGO_ALLOWED_HOSTS=${DOMAIN}
+    # environment:
+    #   - DJANGO_SECRET_KEY=${DJANGO_SECRET_KEY}
+    #   - DJANGO_ALLOWED_HOSTS=127.0.0.1
+    env_file:
+      - ./.env
 
   proxy:
     build:
